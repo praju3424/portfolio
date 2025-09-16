@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Animated Portfolio</title>
+
+  <!-- Google Fonts: Playfair (elegant), Poppins (bold), Roboto (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@600;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="port.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="praj.jpeg" alt="logo" />
+        <span class="brand">MyPortfolio</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#home" class="nav-link">Home<span class="underline"></span></a>
+        <a href="#portfolio" class="nav-link">Portfolio<span class="underline"></span></a>
+        <a href="#services" class="nav-link">Services<span class="underline"></span></a>
+        <a href="#testimonials" class="nav-link">Testimonials<span class="underline"></span></a>
+        <a href="#contact" class="nav-link">Contact<span class="underline"></span></a>
+      </nav>
+
+      <button class="menu-btn" aria-label="toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h1 class="hero-title">
+          <span class="elegant">Designing</span>
+          <span class="bold">with Purpose</span>
+        </h1>
+        <h2 class="hero-sub">
+          <span id="typed"></span><span class="cursor">|</span>
+        </h2>
+
+        <div class="hero-cta">
+          <button id="cta" class="cta-btn">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section container">
+      <h3 class="section-title">Portfolio</h3>
+      <div class="grid portfolio-grid">
+        <!-- 6 project cards -->
+        <article class="card">
+          <div class="card-media">
+          <img src="des.jpeg" alt="project-1">
+          <div class="card-body"><h4>Project One</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, non dolores laborum quam voluptas voluptatem laboriosam ex corrupti maxime, sequi ullam aliquid doloremque in fuga..</p></div>
+        </article>
+
+        <article class="card"><img src="web.jpeg" alt="project-2">
+          <div class="card-media"></div>
+          <div class="card-body"><h4>Project Two</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa autem, eius libero quam ipsum molestias repellendus quo. Earum eaque cupiditate dolore eveniet fuga doloribus recusandae!</p></div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="webdev.jpeg" alt="Project 3"></div>
+          <div class="card-body"><h4>Project Three</h4><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, et odio dolor nulla ipsum eaque, minus vel quas ratione harum sequi esse expedita. Illum, aspernatur!</p></div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="proj4.jpeg" alt="Project 4"></div>
+          <div class="card-body"><h4>Project Four</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolorum quisquam magnam quidem voluptatibus ducimus eius voluptatem explicabo laborum, maiores dignissimos ab qui asperiores veritatis quae vitae nisi. Cupiditate, animi..</p></div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="proj5.jpeg" alt="Project 5"></div>
+          <div class="card-body"><h4>Project Five</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima explicabo laudantium sit tempora nesciunt voluptate facilis dolor dolores ad aliquid doloremque, rem ipsam odio cumque?</p></div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="proj6.jpeg" alt="Project 6"></div>
+          <div class="card-body"><h4>Project Six</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sint laborum sit minima distinctio provident maiores autem natus laboriosam. Eligendi culpa officiis consequuntur nemo non?.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <h3 class="section-title">Services</h3>
+        <div class="services-row">
+          <div class="service">
+            <div class="icon">🎨</div>
+            <h4>Design</h4>
+            <p>Beautiful UI/UX design.</p>
+          </div>
+
+          <div class="service">
+            <div class="icon">💻</div>
+            <h4>Development</h4>
+            <p>Clean, responsive code.</p>
+          </div>
+
+          <div class="service">
+            <div class="icon">🚀</div>
+            <h4>Launch</h4>
+            <p>Deploy and optimize.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h3 class="section-title">Testimonials</h3>
+        <div class="testimonial-box" id="testimonialBox">
+          <p class="quote">"Amazing work! Highly recommended."</p>
+          <p class="who">— Client A</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact container">
+      <h3 class="section-title">Contact</h3>
+      <form id="contactForm" class="contact-form" action="#" novalidate>
+        <div class="form-row">
+          <input type="text" id="name" name="name" placeholder="Name">
+          <input type="email" id="email" name="email" placeholder="Email">
+        </div>
+        <textarea id="message" name="message" rows="6" placeholder="Your message"></textarea>
+        <div class="form-actions">
+          <button type="submit" id="submitBtn" class="submit-btn">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> MyPortfolio</div>
+      <div class="socials">
+        <a href="#" class="social">🐦</a>
+        <a href="#" class="social">💼</a>
+        <a href="#" class="social">📸</a>
+        <div class="box">
+		
+      </div>
+    </div>
+    <div class="box">
+		<div class="instagram">
+			<span></span>
+			<p>
+				Instagram Logo
+			</p>
+		</div>
+	</div>
+  </footer>
+
+  <!-- Minimal JS -->
+  <script>
+    /* Smooth scroll behavior is handled by CSS (scroll-behavior). */
+    /* Typing effect */
+    (function(){
+      const texts = ["I build interfaces.", "I craft experiences.", "I make ideas click."];
+      let i = 0, letter = 0, current = "", forward = true;
+      const el = document.getElementById('typed');
+      const speed = 80;
+      function type() {
+        const full = texts[i];
+        if (forward) {
+          current = full.slice(0, ++letter);
+          el.textContent = current;
+          if (current === full) { forward = false; setTimeout(type, 700); return; }
+        } else {
+          current = full.slice(0, --letter);
+          el.textContent = current;
+          if (letter === 0) { forward = true; i = (i+1) % texts.length; }
+        }
+        setTimeout(type, speed);
+      }
+      type();
+    })();
+
+    /* CTA ripple + pulse handled by CSS; add ripple span on click */
+    document.getElementById('cta').addEventListener('click', function(e){
+      const btn = e.currentTarget;
+      const circle = document.createElement('span');
+      circle.className = 'ripple';
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      circle.style.width = circle.style.height = size + 'px';
+      circle.style.left = (e.clientX - rect.left - size/2) + 'px';
+      circle.style.top = (e.clientY - rect.top - size/2) + 'px';
+      btn.appendChild(circle);
+      setTimeout(()=> circle.remove(), 600);
+    });
+
+    /* Simple testimonials rotator with fade+slide */
+    (function(){
+      const box = document.getElementById('testimonialBox');
+      const testimonials = [
+        {q:'"Amazing work! Highly recommended."', who:'— Client A'},
+        {q:'"Delivered on time and exceeded expectations."', who:'— Client B'},
+        {q:'"Creative, communicative, and professional."', who:'— Client C'}
+      ];
+      let idx = 0;
+      function show(){
+        box.classList.remove('visible');
+        setTimeout(() => {
+          box.querySelector('.quote').textContent = testimonials[idx].q;
+          box.querySelector('.who').textContent = testimonials[idx].who;
+          box.classList.add('visible');
+          idx = (idx+1) % testimonials.length;
+        }, 300);
+      }
+      show();
+      setInterval(show, 4000);
+    })();
+
+    /* Contact form validation + shake effect */
+    const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !message) {
+        submitBtn.classList.remove('shake');
+        // force reflow to restart animation
+        void submitBtn.offsetWidth;
+        submitBtn.classList.add('shake');
+        return;
+      }
+      // pretend submit
+      submitBtn.textContent = 'Sent ✓';
+      submitBtn.disabled = true;
+      setTimeout(()=> {
+        submitBtn.textContent = 'Send Message';
+        submitBtn.disabled = false;
+        form.reset();
+      }, 1500);
+    });
+
+    /* Reveal animations on scroll for testimonials */
+    (function(){
+      const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(en=>{
+          if (en.isIntersecting) en.target.classList.add('in-view');
+        });
+      }, {threshold:0.15});
+      document.querySelectorAll('.testimonial-box, .services-row, .portfolio-grid, .contact-form').forEach(el=>{
+        observer.observe(el);
+      });
+    })();
+
+    /* fill year */
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
